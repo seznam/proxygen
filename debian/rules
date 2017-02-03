@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	+dh $@ --parallel --with autoreconf
+
+override_dh_auto_configure:
+	dh_auto_configure --sourcedirectory=proxygen/ --
+
+override_dh_auto_build:
+	dh_auto_build --sourcedirectory=proxygen/ --
+
+override_dh_auto_clean:
+	dh_auto_clean --sourcedirectory=proxygen/ --
+
+override_dh_auto_install:
+	dh_auto_install --sourcedirectory=proxygen/ --destdir=debian/tmp --
+
+override_dh_auto_test:
+	dh_auto_test --sourcedirectory=proxygen/ --

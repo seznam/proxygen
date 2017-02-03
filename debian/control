@@ -1,0 +1,33 @@
+Source: proxygen
+Priority: extra
+Maintainer: Lukáš Hrázký <lukas.hrazky@firma.seznam.cz>
+Build-Depends:
+ debhelper (>=9),
+ autoconf,
+ autoconf-archive,
+ automake,
+ dh-autoreconf,
+ libboost-system-dev,
+ libboost-thread-dev,
+ libcap-dev,
+ libdouble-conversion-dev,
+ libevent-dev,
+ libfolly-dev,
+ libgflags-dev,
+ libgoogle-glog-dev,
+ libssl-dev,
+ libtool,
+ libwangle-dev,
+ pkg-config,
+ zlib1g-dev
+Standards-Version: 3.9.4
+Section: libs
+Homepage: https://github.com/facebook/proxygen
+Vcs-Git: http://git.github.com/facebook/proxygen
+
+Package: libproxygen-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends},
+Description: Proxygen: Facebook's C++ HTTP Libraries
+ A C++ HTTP client library - development files.
