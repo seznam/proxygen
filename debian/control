@@ -7,18 +7,19 @@ Build-Depends:
  autoconf-archive,
  automake,
  dh-autoreconf,
+ gperf,
  libboost-system-dev,
  libboost-thread-dev,
  libcap-dev,
- libdouble-conversion-dev,
  libevent-dev,
- libfolly-dev,
+ libfolly-dev (>=2016.12.19.00+deb1),
  libgflags-dev,
  libgoogle-glog-dev,
  libssl-dev,
  libtool,
  libwangle-dev,
  pkg-config,
+ python,
  zlib1g-dev
 Standards-Version: 3.9.4
 Section: libs
@@ -29,5 +30,10 @@ Package: libproxygen-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
+ libfolly-dev (>=2016.12.19.00+deb1),
+ libgflags-dev,
+ libgoogle-glog-dev,
+ libwangle-dev,
+ zlib1g-dev
 Description: Proxygen: Facebook's C++ HTTP Libraries
  A C++ HTTP client library - development files.

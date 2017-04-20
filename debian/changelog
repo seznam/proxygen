@@ -1,3 +1,9 @@
+proxygen (2017.01.30.00+deb1) unstable; urgency=medium
+
+  * fixed dependencies
+
+ -- Lukáš Hrázký <lukas.hrazky@firma.seznam.cz>  Thu, 20 Apr 2017 14:22:33 +0200
+
 proxygen (2017.01.30.00) unstable; urgency=medium
 
   * Initial release
